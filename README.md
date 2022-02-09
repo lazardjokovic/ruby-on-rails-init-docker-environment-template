@@ -1,7 +1,7 @@
 https://docs.docker.com/samples/rails/ <br />
 docker-compose run --no-deps web rails new . --force --database=postgresql <br />
 docker-compose build <br />
-Edit config/database.yml <br />
+Edit config/database.yml change all content with this: <br />
 ```
 default: &default
   adapter: postgresql
