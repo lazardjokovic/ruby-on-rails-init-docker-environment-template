@@ -15,3 +15,11 @@ services:
       - "3000:3000"
     depends_on:
       - db
+  pgadmin4:
+      image: dpage/pgadmin4
+      restart: always
+      ports:
+        - 8080:80
+      environment:
+        - PGADMIN_DEFAULT_EMAIL=admin@gmail.com
+        - PGADMIN_DEFAULT_PASSWORD=password
